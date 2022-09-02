@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact-Form</title>
+    <style>
+      body {
+        background-color: rgb(1, 6, 12);
+        border: none;
+        background-repeat: no-repeat;
+      }
+
+      .container {
+        margin-top: calc(55px);
+        margin-left: calc(315px);
+        border-color: aliceblue;
+        border-style: solid;
+        border-left: 0cm;
+        border-right-width: thick;
+        border-bottom-width: medium;
+        width: 720px;
+        height: 600px;
+        padding: 20px;
+        background-color: #1099e2;
+        background-repeat: no-repeat;
+      }
+
+      .text-block {
+        position: absolute;
+        margin-left: calc(300px);
+        padding-left: 350px;
+        bottom: 110px;
+        top: 90px;
+        background-color: white;
+        width: 50px;
+      }
+
+      h1 {
+        color: rgb(22, 160, 246);
+        margin-left: -320px;
+        margin-top: 25px;
+        font-weight: normal;
+        font-style: normal;
+        font-family: "Times New Roman", Times, serif;
+      }
+
+      input {
+        margin-left: -320px;
+        border-style: solid;
+        color: white;
+        border-color: #1099e2;
+        background-color: white;
+        margin-block-start: 20px;
+        border-width: thin;
+        width: 330px;
+        height: 40px;
+        text-shadow: darkgrey;
+        font-weight: 600;
+        font-size: medium;
+      }
+
+      .btn {
+        background-color: #1099e2;
+        color: white;
+        padding: 16px 50px;
+        border: none;
+        cursor: pointer;
+        width: 340px;
+        opacity: 0.9;
+        margin-left: -320px;
+      }
+      .btn:hover {
+        opacity: 0.4;
+      }
+
+      textarea {
+        width: 330px;
+        border-color: #1099e2;
+        margin-left: -320px;
+      }
+      
+      label {
+        margin: -320px;
+        color: gray;
+        font-weight: 600;
+        font-size: large;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+    <div class="container">
+      <div class="text-block">
+        <h1>Contact Us</h1>
+        <input type="text" placeholder="Full name" name="fullname" required />
+        <br/b>
+        <input type="text" placeholder="E-mail" name="e-mail" required />
+        <br/b>
+        <input type="text" placeholder="Phone number" name="phonenumber" required/>
+        <br/b>
+        <input type="text" placeholder="Website" name="website" required />
+        <br/b>
+        <br/b>
+        <div class="col-25">
+        <label>Message</label>
+        <div class="col-75">
+        <textarea id="Message" name="message" style="height:100px"></textarea>
+        </div>
+        <br/b>
+        <button type="Submit" class="btn">Submit</button>
+        </form>
+      </div>
+  </body>
+</html>
